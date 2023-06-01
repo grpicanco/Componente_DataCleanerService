@@ -1,0 +1,19 @@
+# arquivos de ambiente
+.env
+.idea/
+
+# arquivos de configuração do sistema operacional
+*.pyc
+*.DS_Store
+
+# diretórios de arquivos estáticos gerados
+staticfiles/
+
+# diretório de configurações locais
+/local/
+
+# diretório de dependências do Python
+/venv/
+
+# diretório de cache do Python
+__pycache__/
