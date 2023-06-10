@@ -1,7 +1,7 @@
 # arquivos de ambiente
 .env
 .idea/
-
+.csv
 # arquivos de configuração do sistema operacional
 *.pyc
 *.DS_Store
