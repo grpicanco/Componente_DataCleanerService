@@ -1,0 +1,8 @@
+{% extends 'templates.html' %}
+{% block content %}
+<h1><b>Data Set Importado</b></h1>
+<form method="POST" action="{{ url_for('main.tela_2') }}">
+    {{ tabela | safe }}
+  <input type="submit" value="Corrigir Dados">
+</form>
+{% endblock %}

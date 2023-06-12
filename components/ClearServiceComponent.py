@@ -37,7 +37,7 @@ class Regra:
         return f'{self._codigo}: {self._titulo}'
 
 
-class AcaoDeCorrecao():
+class AcaoDeCorrecao:
     def __init__(self, ulr=None, data_criacao=None, data_modificacao=None, codigo=None, titulo=None, descricao=None,
                  tipo=None, script=None):
         self._url = ulr
@@ -71,7 +71,7 @@ class AcaoDeCorrecao():
         return f'{self._codigo}: {self._titulo}'
 
 
-class Componente:
+class ClearServiceComponent:
     def __init__(self):
         self._regras = {}
         self._acao_de_correcao = {}
