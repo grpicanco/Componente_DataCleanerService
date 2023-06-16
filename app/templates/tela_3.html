@@ -1,6 +1,17 @@
 {% extends 'templates.html' %}
 {% block content %}
 
-<h1>teste</h1>
+
+<div class="container" >
+    <div>
+        <h1>Dataset Sujo</h1>
+        {{ tabela_errada | safe}}
+    </div>
+    <div>
+        <h1>Dataset Limpo</h1>
+        {{ tabela_corrigida | safe}}
+    </div>
+
+</div>
 
 {% endblock %}

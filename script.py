@@ -110,14 +110,6 @@ def main():
 
     # Escreva o DataFrame no arquivo Excel
     df.to_csv(nome_arquivo, index=False)
-    coluna = 0
-    for item in corrigido:
-        item['correto'] = [[index, value, 'correto'] for index, value in item['correto']]
-        item['errado'] = [[index, value, 'errado'] for index, value in item['errado']]
-        valores = item['correto'] + item['errado']
-        valores = ordena_dados(valores)
-
-        print(valores)
 
 
 # Press the green button in the gutter to run the script.
