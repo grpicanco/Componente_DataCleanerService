@@ -1,70 +1,159 @@
 html,
 body {
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #808080;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.errado{
-    background-color: #cc0000 !important;
-    color: #000 !important;
-    border-bottom: 1px solid #C8C8C8;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 40px;
-    font-size: 0.9em;
+.row {
+  margin: 0;
 }
 
-.correto{
-    background-color: #4ee44e !important;
-    color: #000 !important;
-    border-bottom: 1px solid #C8C8C8;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 40px;
-    font-size: 0.9em;
+.container {
+  padding: 70px 0;
 }
 
-.corrigido {
-    background-color: #cccc00 !important;
-    color: #000 !important;
-    border-bottom: 1px solid #C8C8C8;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 40px;
-    font-size: 0.9em;
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
 }
 
-table.dataframe, .dataframe th, .dataframe td {
-    border: none;
-    border-bottom: 1px solid #C8C8C8;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 40px;
-    font-size: 0.9em;
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.pagination-page-info {
+  padding: .6em;
+  padding-left: 0;
+  width: 40em;
+  margin: .5em;
+  margin-left: 0;
+  font-size: 12px;
+}
+
+.pagination-page-info b {
+  color: black;
+  background: #6aa6ed;
+  padding-left: 2px;
+  font-size: 150%;
+}
+
+table.dataframe,
+.dataframe th,
+.dataframe td {
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
 }
 
 .niceTable th {
-    background-color: #6aa6ed;
-    color: white;
+  background-color: #6aa6ed;
+  color: white;
 }
 
-tr:nth-child(odd) {
-    background-color: #eee;
+table.dataframe tr:nth-child(odd) {
+  background-color: #eee;
 }
 
-tr:nth-child(even) {
-    background-color: #fff;
+table.dataframe tr:nth-child(even) {
+  background-color: #fff;
 }
 
-tr:hover {
-    background-color: #ffff99;
+table.dataframe tr:hover {
+  background-color: #ffff99;
+}
+
+table.dataframe td {
+  color: #000 !important;
 }
 
 .btn {
-    margin: 2px 2px;
+  margin: 2px 2px;
+}
+
+/* Seu CSS existente */
+
+table.niceTable {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.niceTable th,
+table.niceTable td {
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+  font-size: 0.9em;
+   text-align: center;
+}
+
+table.niceTable th {
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+/* Adiciona bordas verticais nas células de dados */
+table.niceTable td {
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+table.niceTable th {
+  background-color: #6aa6ed;
+  color: white;
+}
+
+table.niceTable tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+table.niceTable tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+table.niceTable tbody tr:hover {
+  background-color: #ffff99;
+}
+
+table.niceTable td.corrigido {
+  background-color: #DAA520;
+  color: #000;
+}
+
+table.niceTable td.correto {
+  background-color: #2E8B57;
+  color: #000;
+}
+
+table.niceTable td.errado {
+  background-color: #B22222;
+  color: #000;
+}
+
+table.niceTable tbody tr:hover td.corrigido {
+  background-color: #b28d67;
+}
+
+table.niceTable tbody tr:hover td.correto {
+  background-color: #67b286;
+}
+
+table.niceTable tbody tr:hover td.errado {
+  background-color: #b26767;
 }

@@ -66,7 +66,7 @@ def tela_2():
     df_json = session.get('df_json')
     if df_json:
         df = pd.read_json(df_json)
-        df = df.to_html(index=False, classes='table table-bordered table-dark')
+        df = df.to_html(index=False, classes='table table-bordered')
     else:
         df = 'Sem dados'
 
@@ -112,8 +112,8 @@ def tela_3():
     tabela_html_corrigido = df_estilizado_corrigido.to_html(index=False, escape=False)
 
     # Remover a classe "dataframe" e substituí-la por "table table-bordered table-dark"
-    tabela_html_errada = tabela_html_errada.replace('class="dataframe"', 'class="table table-bordered"')
-    tabela_html_corrigido = tabela_html_corrigido.replace('class="dataframe"', 'class="table table-bordered"')
+    tabela_html_errada = tabela_html_errada.replace('class="dataframe"', 'class="table table-bordered niceTable"')
+    tabela_html_corrigido = tabela_html_corrigido.replace('class="dataframe"', 'class="table table-bordered niceTable"')
 
     # Remover células vazias
     tabela_html_errada = tabela_html_errada.replace('<td><td', '<td').replace('</td></td>', '</td>')

@@ -3,6 +3,9 @@
 <h1><b>Data Set Importado</b></h1>
 <form method="POST" action="{{ url_for('main.tela_2') }}">
     {{ tabela | safe }}
-  <input type="submit" value="Corrigir Dados">
+    <div>
+         <button type="submit" class="btn btn-outline-primary" href=""> Corrigir Dados</button>
+    </div>
+
 </form>
 {% endblock %}

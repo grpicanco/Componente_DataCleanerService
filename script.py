@@ -70,7 +70,7 @@ def ordena_dados(values):
 
 
 def main():
-    path = '~//Documentos//Untitled_1.csv'
+    path = '~//Documentos//Projetos//Componente_ClearService//arquivos//Untitled 1.csv'
     df = ler_tabela(path)
     regras = {
         0: ["RG001"],  # Id

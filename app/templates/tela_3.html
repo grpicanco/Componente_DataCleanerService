@@ -3,13 +3,21 @@
 
 
 <div class="container" >
-    <div>
+    <div class="col">
         <h1>Dataset Sujo</h1>
         {{ tabela_errada | safe}}
     </div>
-    <div>
+    <div class="col">
         <h1>Dataset Limpo</h1>
         {{ tabela_corrigida | safe}}
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-1">
+            <a class="btn btn-outline-primary" href="{{ url_for('main.tela_1') }}">Voltar</a>
+        </div>
+        <div class="col-3">
+            <a class="btn btn-outline-primary" href="{{ url_for('main.tela_4') }}">Baixar Dataset Limpo</a>
+        </div>
     </div>
 
 </div>
