@@ -4,9 +4,9 @@ import requests
 
 
 class Regra:
-    def __init__(self, ulr=None, data_criacao=None, data_modificacao=None, codigo=None, titulo=None, descricao=None,
+    def __init__(self, url=None, data_criacao=None, data_modificacao=None, codigo=None, titulo=None, descricao=None,
                  tipo=None, script=None):
-        self._url = ulr
+        self._url = url
         self._data_criacao = data_criacao
         self._data_modificacao = data_modificacao
         self._codigo = codigo
@@ -38,9 +38,9 @@ class Regra:
 
 
 class AcaoDeCorrecao:
-    def __init__(self, ulr=None, data_criacao=None, data_modificacao=None, codigo=None, titulo=None, descricao=None,
+    def __init__(self, url=None, data_criacao=None, data_modificacao=None, codigo=None, titulo=None, descricao=None,
                  tipo=None, script=None):
-        self._url = ulr
+        self._url = url
         self._data_criacao = data_criacao
         self._data_modificacao = data_modificacao
         self._codigo = codigo

@@ -5,7 +5,7 @@ from typing import List
 
 import pandas as pd
 
-from components.ClearServiceComponent import *
+from components.DataCleanerServiceComponent import *
 
 componente = ClearServiceComponent()
 
@@ -70,7 +70,7 @@ def ordena_dados(values):
 
 
 def main():
-    path = '~//Documentos//Projetos//Componente_ClearService//arquivos//Untitled 1.csv'
+    path = 'arquivos//Untitled 1.csv'
     df = ler_tabela(path)
     regras = {
         0: ["RG001"],  # Id

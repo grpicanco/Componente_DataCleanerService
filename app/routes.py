@@ -7,7 +7,7 @@ import pandas as pd
 from flask import Blueprint, render_template, request, redirect, url_for, session
 
 import script as sp
-from components.ClearServiceComponent import ClearServiceComponent
+from components.DataCleanerServiceComponent import ClearServiceComponent
 
 main_blueprint = Blueprint('main', __name__)
 
